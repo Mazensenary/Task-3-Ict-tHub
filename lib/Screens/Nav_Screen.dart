@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_1/Screens/Grid_Screen.dart';
+import 'package:test_1/Screens/Login_Screen.dart';
 import 'package:test_1/Screens/Slider.dart';
 import 'package:test_1/Screens/calc_screen.dart';
 import 'package:test_1/Screens/new_homescreen.dart';
@@ -21,6 +22,7 @@ class _HomeNavBarState extends State<HomeNavBar> {
     HomeScreen(),
     const GridScreen(),
     CalculatorScreen(),
+    LoginScreen(),
   ];
   int currentIndex=0;
   @override
@@ -45,6 +47,7 @@ class _HomeNavBarState extends State<HomeNavBar> {
             BottomNavigationBarItem(icon: Icon(Icons.add),label:'counter',),
             BottomNavigationBarItem(icon: Icon(Icons.car_repair_outlined),label:'Cars',),
             BottomNavigationBarItem(icon: Icon(Icons.calculate_outlined),label:'calculator',),
+            BottomNavigationBarItem(icon: Icon(Icons.login),label:"Log In",),
 
 
 
